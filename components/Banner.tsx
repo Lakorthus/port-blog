@@ -4,10 +4,10 @@ const Banner = () => {
       <div>
         <h1 className="text-7xl">Lakorthus Daily Blog</h1>
         <h2 className="mt-5 md:mt-0">
-          Welcome to{" "}
+          Welcome to
           <span className="underline decoration-4 decoration-orange-500">
             Every Developers
-          </span>{" "}
+          </span>
           favourite blog in the world!
         </h2>
       </div>

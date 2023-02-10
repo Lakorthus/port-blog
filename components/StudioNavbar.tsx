@@ -6,7 +6,7 @@ function StudioNavBar(props: any) {
     <div>
       <div className="flex items-center justify-between p-5">
         <Link href="/" className="text-orange-300 flex items-center ml-2">
-          <ArrowUturnLeftIcon className="h-6 w-6 text-orange-300 mr-2" />
+          {/* <ArrowUturnLeftIcon className="h-6 w-6 text-orange-300 mr-2" /> */}
           Go To Website
         </Link>
       </div>
