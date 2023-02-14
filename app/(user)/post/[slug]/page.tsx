@@ -55,7 +55,7 @@ async function Post({ params: { slug } }: Props) {
               alt={post.author.name}
               fill
               priority
-                sizes={"(max-width: 640px) 100vw, 640px"}
+              sizes={"(max-width: 640px) 100vw, 640px"}
             />
           </div>
 
@@ -73,15 +73,18 @@ async function Post({ params: { slug } }: Props) {
                 </p>
               </div>
 
-              <div className="flex items-center space-x-2">
-                <Image
-                  className="rounded-full"
-                  src={urlFor(post.author.image).url()}
-                  alt={post.author.name}
-                  height={40}
-                  width={40}
-                  priority
-                />
+              <div className="flex items-center space-x-2 p-5">
+                <div className="relative w-20 h-20 rounded-full">
+
+                  <Image
+                    className="object-cover rounded-full"
+                    src={urlFor(post.author.image).url()}
+                    alt={post.author.name}
+                    fill
+                    priority
+                    sizes={"(max-width: 640px) 100vw, 640px"}
+                    />
+                </div>
 
                 <div className="w-64">
                   <h3 className="text-lg font-bold">{post.author.name}</h3>
